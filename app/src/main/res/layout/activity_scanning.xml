@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_drawable"
+    android:layout_height="match_parent"
+    tools:context=".Scanning">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#263026"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="?actionBarItemBackground"
+            app:tint="@color/white">
+        </ImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Scanning"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </androidx.appcompat.widget.AppCompatTextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_show_menu"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_menu_open_24"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"/>
+
+            <!-- Add other views here -->
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtpacks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/edit_text_outline_anim"
+                android:hint="@string/scan_packaging_sticker"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtinvo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text_outline_anim"
+                android:inputType="text"
+                android:hint="@string/scan_invoice_sticker"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtpacksqty"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/edit_text_outline_anim"
+                android:hint="@string/scan_packaging_sticker_qty"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtinvoqt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/edit_text_outline_anim"
+                android:hint="Scan Invoice Sticker Qty"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonsave"
+                android:layout_width="match_parent"
+                android:background="#FFB300"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Save Information"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGenerateSticker"
+                android:layout_width="match_parent"
+                android:background="#FFB300"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Genrate Confirmation Sticker"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

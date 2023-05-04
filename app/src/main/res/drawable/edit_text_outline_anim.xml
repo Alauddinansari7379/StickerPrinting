@@ -1,0 +1,91 @@
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/normal"
+        android:drawable="@drawable/edit_text_outline_yellow" />
+
+    <item
+        android:id="@+id/pressed"
+        android:drawable="@drawable/edit_text_outline_yellow" />
+
+    <item
+        android:id="@+id/focused"
+        android:drawable="@drawable/edit_text_outline_yellow" />
+
+    <item
+        android:id="@+id/invalid"
+        android:drawable="@drawable/edit_text_outline_yellow" />
+
+    <transition
+        android:drawable="@drawable/edit_text_outline_yellow"
+        android:fromId="@+id/normal"
+        android:toId="@+id/pressed">
+
+        <animation-list>
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="0dp" />
+            </item>
+
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="20dp" />
+            </item>
+        </animation-list>
+    </transition>
+
+    <transition
+        android:drawable="@drawable/edit_text_outline_yellow"
+        android:fromId="@+id/pressed"
+        android:toId="@+id/focused">
+
+        <animation-list>
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="20dp" />
+            </item>
+
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="0dp" />
+            </item>
+
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="20dp" />
+            </item>
+        </animation-list>
+    </transition>
+
+    <transition
+        android:drawable="@drawable/edit_text_outline_yellow"
+        android:fromId="@+id/focused"
+        android:toId="@+id/invalid">
+
+        <animation-list>
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="20dp" />
+            </item>
+
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="0dp" />
+            </item>
+
+            <item
+                android:duration="150"
+                android:drawable="@drawable/edit_text_outline_yellow">
+                <corners android:radius="20dp" />
+            </item>
+        </animation-list>
+    </transition>
+
+</animated-selector>

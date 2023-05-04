@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Print Sticker</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <string name="scan_invoice_sticker">Scan Invoice Sticker</string>
+    <string name="scan_packaging_sticker">Scan Packaging Sticker</string>
+    <string name="scan_packaging_sticker_qty">Scan Packaging Sticker Qty</string>
+</resources>
